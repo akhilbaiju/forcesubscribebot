@@ -50,7 +50,7 @@ def _check_member(client, message):
       except UserNotParticipant:
         try:
           sent_message = message.reply_text(
-              "{},നി ചാനലിൽ Join ചെയ്താൽ മാത്രമേ ഇതിൽ മെസ്സേജ് അയക്കാൻ പറ്റു. Join ചെയ്തിട്ട്. താഴത്തെ button click. Please Join in [HONEY BEE MOVIES 🐝 ](https://t.me/{})  and press the button below to unmute yourself".format(message.from_user.mention, channel, channel),
+              "{},നി ചാനലിൽ Join ചെയ്താൽ മാത്രമേ ഇതിൽ മെസ്സേജ് അയക്കാൻ പറ്റു. Join ചെയ്തിട്ട്. താഴത്തെ button click. Please Join in [HONEY BEE MOVIES 🐝 ](https://t.me/joinchat/UlEkHzmhso8hlw8b)  and press the button below to unmute yourself".format(message.from_user.mention, channel, channel),
               disable_web_page_preview=True,
               reply_markup=InlineKeyboardMarkup(
                   [[InlineKeyboardButton("UnMute Me 🤫", callback_data="onUnMuteRequest")]]
